@@ -2,19 +2,24 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    height: 100vh;
+    max-height: 100vh;
 }
 
 body > div {
-    padding-left: 200px;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
-div {
+/* div {
     border: solid;
     border-color: red;
+} */
+
+body, header {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
-ul {
+header > ul {
     display: flex;
     flex: 1;
     justify-content: end;
@@ -22,10 +27,12 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    gap: 2rem;
 }
 
-.header {
+header {
     display: flex;
+    padding: 1rem;
     background-color: #1F2937;
     color: #F9FAF8;
 }
@@ -34,21 +41,21 @@ ul {
     font-size: 24px;
 }
 
-.headerlinks {
-
-}
-
 .main {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #1F2937;
     color: #F9FAF8;
+    padding: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
     gap: 100px;
-    padding: 32px;
 }
 
 .main > img {
-    max-width: 500px;
+    padding: 2rem;
+    max-width: 400px;
 }
 
 .maininfo > .title {
@@ -61,10 +68,111 @@ ul {
     font-size: 18px;
 }
 
+.maininfo > button {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0.1rem;
+    background-color: #3382f6;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    max-height: 2em;
+    max-width: 10rem;
+    margin-top: 1rem;
+}
+
 .content {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: bolder;
+    padding: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .cardbox {
-    flex-direction: row;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.cards > img {
+    max-width: 12rem;
+    align-self: center;
+    border: solid;
+    border-color: rgb(25, 98, 233);
+    border-radius: 5%;
+}
+
+.cards > div {
+    padding: 0.5rem;
+}
+
+.quotebox {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    padding: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.quote {
+    align-self: center;
+    max-width: 80%;
+    font-style: italic;
+}
+
+.reference {
+    text-align: right;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+#signupbox {
+    display: flex;
+    justify-content: center;
+}
+
+.signupbox {
+    display: flex;
+    flex: 1;
+    border-radius: 1rem;
+    max-width: 50rem;
+    margin: 4rem;
+    padding: 1rem;
+    color: white;
+    background-color: #3382f6;
+}
+
+.signupbox > button {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0.1rem;
+    background-color: #3382f6;
+    border: solid;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    max-height: 2em;
+    max-width: 10rem;
+    margin: auto;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    background-color: #1F2937;
 }
